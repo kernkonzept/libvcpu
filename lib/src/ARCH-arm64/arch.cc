@@ -32,5 +32,5 @@ void l4vcpu_print_state_arch(l4_vcpu_state_t const *vcpu,
   printf("%s r8=%08lx  r9=%08lx r10=%08lx r11=%08lx\n",
          prefix, vcpu->r.r[8], vcpu->r.r[9], vcpu->r.r[10], vcpu->r.r[11]);
   printf("%sr12=%08lx  lr=%08lx flags=%08lx\n",
-         prefix, vcpu->r.r[12], vcpu->r.lr, vcpu->r.flags);
+         prefix, vcpu->r.r[12], vcpu->r.r[30], vcpu->r.flags);
 }
