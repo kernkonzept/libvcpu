@@ -15,6 +15,10 @@
  * invalidate any other reasons why the executable file might be covered by
  * the GNU General Public License.
  */
+/**
+ * \file
+ * vCPU support library (C interface).
+ */
 #pragma once
 
 #include <l4/sys/vcpu.h>
@@ -34,7 +38,7 @@ __BEGIN_DECLS
 /**
  * \defgroup api_libvcpu_ext Extended vCPU support
  * \ingroup api_libvcpu
- * \brief extended vCPU handling functionality.
+ * \brief Extended vCPU handling functionality.
  */
 
 typedef void (*l4vcpu_event_hndl_t)(l4_vcpu_state_t *vcpu);
@@ -186,10 +190,10 @@ l4vcpu_is_page_fault_entry(l4_vcpu_state_t const *vcpu) L4_NOTHROW;
  * \brief Allocate state area for an extended vCPU.
  * \ingroup api_libvcpu_ext
  *
- * \retval vcpu      Allocated vcpu-state area.
- * \retval ext_state Allocated extended vcpu-state area.
- * \param  task      Task to use for allocation.
- * \param  regmgr    Region manager to use for allocation.
+ * \param[out] vcpu       Allocated vcpu-state area.
+ * \param[out] ext_state  Allocated extended vcpu-state area.
+ * \param task            Task to use for allocation.
+ * \param regmgr          Region manager to use for allocation.
  *
  * \return 0 for success, error code otherwise
  */

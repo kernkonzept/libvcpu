@@ -16,6 +16,10 @@
  * invalidate any other reasons why the executable file might be covered by
  * the GNU General Public License.
  */
+/**
+ * \file
+ * vCPU support library (C++ interface).
+ */
 
 #pragma once
 
@@ -242,10 +246,11 @@ public:
   /**
    * \brief Allocate state area for an extended vCPU.
    *
-   * \retval vcpu      Allocated vcpu-state area.
-   * \retval ext_state Allocated extended vcpu-state area.
-   * \param  task      Task to use for allocation, defaults to own task.
-   * \param  rm        Region manager to use for allocation defaults to standard region manager.
+   * \param[out] vcpu       Allocated vcpu-state area.
+   * \param[out] ext_state  Allocated extended vcpu-state area.
+   * \param  task           Task to use for allocation, defaults to own task.
+   * \param  rm             Region manager to use for allocation defaults to
+   *                        standard region manager.
    *
    * \return 0 for success, error code otherwise
    */
