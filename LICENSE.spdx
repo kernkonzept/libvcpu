@@ -8,7 +8,7 @@ SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-Document
 DocumentNamespace: spdx:kernkonzept/libvcpu-9757a8b8-e7f6-11e8-b222-d3a8e3f30d55
-DocumentName: LICENSE.spdx
+DocumentName: libvcpu
 
 Creator: Organization: Kernkonzept GmbH (info@kernkonzept.com)
 
